@@ -30,12 +30,11 @@ while game_is_on:
         food.refresh()
 
     if snake.touched_wall():
-        scoreboard.game_over()
-        game_is_on = False
+        scoreboard.reset_scoreboard()
+        snake.reset()
 
     if snake.snake_bitten():
-        scoreboard.game_over()
-        game_is_on = False
-
+        scoreboard.reset_scoreboard()
+        snake.reset()
 screen.exitonclick()
 

@@ -58,3 +58,10 @@ class Snake:
         for segment in self.segments[1:]:
             if self.head.distance(segment) < 10:
                 return True
+
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000,1000)
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
