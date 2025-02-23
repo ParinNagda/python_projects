@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1d9208c-2b5b-4ced-9953-179afa0ac044" name="Changes" comment="Day 25">
-      <change afterPath="$PROJECT_DIR$/Day 26/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 25/US states/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 25/US states/main.py" afterDir="false" />
+    <list default="true" id="c1d9208c-2b5b-4ced-9953-179afa0ac044" name="Changes" comment="Day 25 and Day 26">
+      <change afterPath="$PROJECT_DIR$/Day 27/degree_to_fahrenheit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 27/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 27/playground.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,19 +50,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Unnamed.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.ball.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.python_project.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/parin/Data/Repositories/python_projects/Day 25/squirrel_population&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Unnamed.executor": "Debug",
+    "Python.ball.executor": "Run",
+    "Python.degree_to_fahrenheit.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.playground.executor": "Run",
+    "Python.python_project.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/parin/Data/Repositories/python_projects/Day 25/squirrel_population"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\parin\Data\Repositories\python_projects\Day 25\squirrel_population" />
@@ -94,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739693567613</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Day 25 and Day 26">
+      <option name="closed" value="true" />
+      <created>1740028109640</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740028109640</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -125,6 +137,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Day 25" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 25" />
+    <MESSAGE value="Day 25 and Day 26" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 25 and Day 26" />
   </component>
 </project>
