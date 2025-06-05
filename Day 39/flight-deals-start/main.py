@@ -9,6 +9,12 @@ from notification_manager import NotificationManager
 
 data_manager = DataManager()
 sheet_data = data_manager.get_destination_data()
+
+customer_data = data_manager.get_customer_emails()
+# Verify the name of your email column in your sheet. Yours may be different from mine
+customer_email_list = [row["whatIsYourEmail?"] for row in customer_data]
+# print(f"Your email list includes {customer_email_list}")
+
 flight_search = FlightSearch()
 notification_manager = NotificationManager()
 
@@ -41,14 +47,12 @@ for destination in sheet_data:
     cheapest_flight = find_cheapest_flight(flights)
     if cheapest_flight.price != "N/A" and cheapest_flight.price < destination["lowestPrice"]:
         print(f"Lower price flight found to {destination['city']}!")
-        # notification_manager.send_sms(
-        #     message_body=f"Low price alert! Only £{cheapest_flight.price} to fly "
-        #                  f"from {cheapest_flight.origin_airport} to {cheapest_flight.destination_airport}, "
-        #                  f"on {cheapest_flight.out_date} until {cheapest_flight.return_date}."
-        # )
+        message = f"Low price alert! Only GBP {cheapest_flight.price} to fly direct " \
+                  f"from {cheapest_flight.origin_airport} to {cheapest_flight.destination_airport}, " \
+                  f"on {cheapest_flight.out_date} until {cheapest_flight.return_date}."
         # SMS not working? Try whatsapp instead.
         notification_manager.send_sms(
-            message_body=f"Low price alert! Only £{cheapest_flight.price} to fly "
-                         f"from {cheapest_flight.origin_airport} to {cheapest_flight.destination_airport}, "
-                         f"on {cheapest_flight.out_date} until {cheapest_flight.return_date}."
+            message_body=message
         )
+
+        notification_manager.send_emails(email_list=customer_email_list, email_body=message)
